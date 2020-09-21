@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="KassaSysteemUWP.Pages.AddEventPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KassaSysteemUWP.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemBaseMediumLowColor}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300" ></RowDefinition>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Maak een nieuw evenement aan" Grid.Row="0" Grid.Column="0" FontSize="40" FontWeight="Bold" Margin="75" />
+        <TextBlock Text="Naam evenement?" Grid.Row="1" Grid.Column="0" FontSize="35" Margin="40" />
+        <TextBox x:Name="nameEventBox" Grid.Row="1" Grid.Column="1" Margin="40" FontSize="36" />
+        <TextBlock Text="Aantal dagen evenement?" Grid.Row="2" Grid.Column="0" FontSize="35" Margin="40" />
+        <TextBox x:Name="daysEventBox" Grid.Row="2" Grid.Column="1" Margin="40" FontSize="36" />
+        <Button x:Name="AddEvenementButton" Content="Maak aan" Grid.Row="3" Grid.Column="1" Margin="40,40,0,0" Width="300" Height="50" FontSize="30" VerticalAlignment="Top" Click="AddEvenementButton_Click" />
+        <Button x:Name="CancelEvenementButton" Content="Annuleren" Grid.Row="3" Grid.Column="1" Margin="433,40,0,0" Width="300" Height="50" FontSize="30" VerticalAlignment="Top" Click="CancelEvenementButton_Click" />
+    </Grid>
+</Page>
