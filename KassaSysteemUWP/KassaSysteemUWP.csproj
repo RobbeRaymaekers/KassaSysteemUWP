@@ -122,6 +122,8 @@
     <Compile Include="Classes\Day.cs" />
     <Compile Include="Classes\Evenement.cs" />
     <Compile Include="Classes\Family.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\Tools\XmlHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -139,6 +141,7 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Menu\Drinks.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

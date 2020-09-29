@@ -19,7 +19,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Margin="64,100,0,0" Text="Kies een Evenement" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="81" FontWeight="Bold" FontSize="36" HorizontalAlignment="Left" Width="356"/>
         <ListBox x:Name="eventListBox" Grid.Row="1" Margin="64,0,0,0" HorizontalAlignment="Left" Width="337" Height="546" VerticalAlignment="Top" 
-                 ItemsSource="{x:Bind Evenements}">
+                 ItemsSource="{x:Bind Evenements}" SelectionChanged="eventListBox_SelectionChanged">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Margin="10">

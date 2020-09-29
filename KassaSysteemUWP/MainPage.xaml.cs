@@ -43,5 +43,10 @@ namespace KassaSysteemUWP
         {
             Frame.Navigate(typeof(AddEventPage));
         }
+
+        private void eventListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
