@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace KassaSysteemUWP.Classes
 {
@@ -12,7 +13,11 @@ namespace KassaSysteemUWP.Classes
         private string name;
 
         // Id of the day that this family visited the event
+        [XmlIgnore]
         private int dayID;
+
+        //the amount of money spent 
+        private float moneySpent = 0;
 
 
 

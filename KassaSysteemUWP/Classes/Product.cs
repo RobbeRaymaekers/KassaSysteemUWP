@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace KassaSysteemUWP.Classes
 {
@@ -12,6 +13,7 @@ namespace KassaSysteemUWP.Classes
 
         public float price;
 
+        [XmlIgnore]
         private ProductType productType;
 
         public Product(string name, float price, ProductType pt)

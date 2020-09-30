@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace KassaSysteemUWP.Classes
 {
@@ -23,6 +24,11 @@ namespace KassaSysteemUWP.Classes
 
         //list of all the days this event lasts for
         private List<Day> days = new List<Day>();
+
+        //Menu for this event
+        [XmlIgnore]
+        private Menu menu;
+
 
         public static ObservableCollection<Evenement> EventList = new ObservableCollection<Evenement>();
         public static HashSet<String> EventNameList = new HashSet<string>();
@@ -45,6 +51,8 @@ namespace KassaSysteemUWP.Classes
                 }
             }
         }
+
+        public Menu Menu { get => menu; set => menu = value; }
 
         public Evenement(string name, int amntDays)
         {
@@ -80,7 +88,6 @@ namespace KassaSysteemUWP.Classes
             }
             AmntDays = newAmntDays;
         }
-
         
     }
 }

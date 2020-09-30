@@ -15,6 +15,9 @@ namespace KassaSysteemUWP.Classes
         // shows which day of the event this is
         private int dayID;
 
+        // all families that visited this day
+        private HashSet<Family> families = new HashSet<Family>();
+
 
 
         public Day(Evenement ogEvenement, int dayID)
@@ -22,6 +25,14 @@ namespace KassaSysteemUWP.Classes
             this.ogEvenement = ogEvenement;
             this.dayID = dayID;
         }
+
+
+        public void addFamily(Family family)
+        {
+            families.Add(family);
+        }
+
+
 
     }
 }

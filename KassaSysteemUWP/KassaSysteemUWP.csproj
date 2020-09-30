@@ -122,6 +122,7 @@
     <Compile Include="Classes\Day.cs" />
     <Compile Include="Classes\Evenement.cs" />
     <Compile Include="Classes\Family.cs" />
+    <Compile Include="Classes\Menu.cs" />
     <Compile Include="Classes\Product.cs" />
     <Compile Include="Classes\Tools\XmlHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
