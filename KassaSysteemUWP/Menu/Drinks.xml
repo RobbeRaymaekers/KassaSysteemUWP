@@ -1,7 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Drinks>
   <Product>
-    <name>Cola</name>
+    <name>Pepsi</name>
+    <price>1.8</price>
+  </Product>
+  <Product>
+    <name>PepsiMax</name>
+    <price>1.8</price>
+  </Product>
+  <Product>
+    <name>WaterPlat</name>
+    <price>1.8</price>
+  </Product>
+  <Product>
+    <name>Limonade</name>
+    <price>1.8</price>
+  </Product>
+  <Product>
+    <name>IceTea</name>
+    <price>1.8</price>
+  </Product>
+  <Product>
+    <name>Koffie</name>
     <price>2</price>
+  </Product>
+  <Product>
+    <name>thee</name>
+    <price>2</price>
+  </Product>
+  <Product>
+    <name>Pintje</name>
+    <price>1.8</price>
+  </Product>
+  <Product>
+    <name>White</name>
+    <price>2</price>
+  </Product>
+  <Product>
+    <name>Palm</name>
+    <price>2</price>
+  </Product>
+  <Product>
+    <name>Ommegang</name>
+    <price>3</price>
+  </Product>
+  <Product>
+    <name>Tongerlo</name>
+    <price>3</price>
+  </Product>
+  <Product>
+    <name>WijnGlas</name>
+    <price>2.5</price>
+  </Product>
+  <Product>
+    <name>WijnFles</name>
+    <price>12</price>
+  </Product>
+  <Product>
+    <name>CavaGlas</name>
+    <price>3</price>
+  </Product>
+  <Product>
+    <name>CavaFles</name>
+    <price>15</price>
   </Product>
 </Drinks>

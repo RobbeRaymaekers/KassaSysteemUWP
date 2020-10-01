@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dessert>
+  <Product>
+    <name>Kriekentaart</name>
+    <price>2.5</price>
+  </Product>
+  <Product>
+    <name>BreugelTaart</name>
+    <price>2.5</price>
+  </Product>
+  <Product>
+    <name>FlanTaart</name>
+    <price>2.5</price>
+  </Product>
+  <Product>
+    <name>RijstTaart</name>
+    <price>2.5</price>
+  </Product>
+  <Product>
+    <name>SmurfenTaart</name>
+    <price>3.5</price>
+  </Product>
+</Dessert>

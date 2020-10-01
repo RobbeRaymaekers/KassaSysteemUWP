@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Main>
+  <Product>
+    <name>SpaghettiKlein</name>
+    <price>8</price>
+  </Product>
+  <Product>
+    <name>SpaghettiGroot</name>
+    <price>10</price>
+  </Product>
+  <Product>
+    <name>VeggieKlein</name>
+    <price>8</price>
+  </Product>
+  <Product>
+    <name>VeggieGroot</name>
+    <price>10</price>
+  </Product>
+</Main>

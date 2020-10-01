@@ -19,12 +19,24 @@ namespace KassaSysteemUWP.Classes
         //the amount of money spent 
         private float moneySpent = 0;
 
+        //table number of this family
+        private int tableNr;
+
+        //all the items eaten by the family
+        private List<Product> foodEaten = new List<Product>();
 
 
-        public Family(string name, int dayID)
+        public Family(string name, int dayID, int tableNr)
         {
             this.name = name;
             this.dayID = dayID;
+            this.tableNr = tableNr;
+        }
+
+
+        public void addProduct(Product product)
+        {
+            foodEaten.Add(product);
         }
 
     }
