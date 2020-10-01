@@ -1,0 +1,6 @@
+﻿namespace KassaSysteemUWP
+{
+    class MenuReader
+    {
+    }
+}
