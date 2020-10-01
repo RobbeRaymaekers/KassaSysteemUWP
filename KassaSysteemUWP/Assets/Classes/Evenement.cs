@@ -16,7 +16,7 @@ namespace KassaSysteemUWP.Classes
         // Name of the event
         private string _name;
 
-        // start date of the event
+        // start date of the event .
         private DateTime dateEvent;
 
         // the amount of days the event lasts for
