@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Runtime.ExceptionServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
 namespace KassaSysteemUWP.Classes
@@ -45,7 +40,7 @@ namespace KassaSysteemUWP.Classes
                     throw new ArgumentException();
                 }
                 else
-                { 
+                {
                     _name = value;
                     EventNameList.Add(value);
                 }
@@ -61,20 +56,20 @@ namespace KassaSysteemUWP.Classes
             AmntDays = amntDays;
 
             //create all the days for the event
-            for(int i = 1; i < amntDays+1; i++)
+            for (int i = 1; i < amntDays + 1; i++)
             {
                 days.Add(new Day(this, i));
             }
 
             //we add this event to the list of all events
             EventList.Add(this);
-            
+
 
         }
 
         public void ChangeDays(int newAmntDays)
         {
-            if(newAmntDays == AmntDays) { return; }
+            if (newAmntDays == AmntDays) { return; }
             else if (newAmntDays > AmntDays)
             {
                 for (int i = 0; i < newAmntDays - AmntDays; i++)
@@ -88,6 +83,6 @@ namespace KassaSysteemUWP.Classes
             }
             AmntDays = newAmntDays;
         }
-        
+
     }
 }

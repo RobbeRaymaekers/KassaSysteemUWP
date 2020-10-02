@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
 
@@ -29,9 +28,9 @@ namespace KassaSysteemUWP.Pages
 
         private void MenuBttn_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-            
+
         }
-        
+
         public static void SetEVENT(Evenement evenement)
         {
             EVENT = evenement;

@@ -1,5 +1,4 @@
 ﻿using KassaSysteemUWP.Classes;
-using System;
 using System.Collections.Generic;
 using System.Xml;
 
@@ -18,7 +17,7 @@ namespace KassaSysteemUWP
             XmlDocument doc = new XmlDocument();
             doc.Load(pathToIcoFile + type + ".xml");
 
-            foreach(XmlNode node in doc.DocumentElement.ChildNodes)
+            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
             {
                 string name = node.ChildNodes[0].InnerText;
                 float price = float.Parse(node.ChildNodes[1].InnerText);

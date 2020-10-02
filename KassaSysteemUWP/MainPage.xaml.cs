@@ -1,5 +1,5 @@
-﻿using KassaSysteemUWP.Pages;
-using KassaSysteemUWP.Classes;
+﻿using KassaSysteemUWP.Classes;
+using KassaSysteemUWP.Pages;
 using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;

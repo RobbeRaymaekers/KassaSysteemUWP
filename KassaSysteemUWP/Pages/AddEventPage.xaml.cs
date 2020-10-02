@@ -1,5 +1,5 @@
-﻿using System;
-using KassaSysteemUWP.Classes;
+﻿using KassaSysteemUWP.Classes;
+using System;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
