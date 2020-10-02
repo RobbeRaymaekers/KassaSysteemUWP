@@ -1,4 +1,5 @@
 ﻿using System;
+using KassaSysteemUWP.Classes;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -22,7 +23,7 @@ namespace KassaSysteemUWP.Pages
             int n;
             if (!int.TryParse(daysEventBox.Text, out n))
             {
-                showMessage("Aantal dagen moet een geheel getal zijn!", "U hebt waarschijnlijk een fout gemaakt");
+                ShowMessage("Aantal dagen moet een geheel getal zijn!", "U hebt waarschijnlijk een fout gemaakt");
             }
             else
             {
@@ -30,11 +31,11 @@ namespace KassaSysteemUWP.Pages
                 {
                     Evenement newEvent = new Evenement(nameEventBox.Text, n);
                     Frame.Navigate(typeof(MainPage));
-                    showMessage("Het nieuwe evenement " + nameEventBox.Text + " is aangemaakt!");
+                    ShowMessage("Het nieuwe evenement " + nameEventBox.Text + " is aangemaakt!");
                 }
                 catch (ArgumentException ae)
                 {
-                    showMessage("Een evenement met deze naam bestaat al", "U hebt waarschijnlijk een fout gemaakt");
+                    ShowMessage("Een evenement met deze naam bestaat al", "U hebt waarschijnlijk een fout gemaakt");
                 }
 
             }
@@ -46,12 +47,12 @@ namespace KassaSysteemUWP.Pages
             Frame.Navigate(typeof(MainPage));
         }
 
-        private async void showMessage(String warning, String Title)
+        private async void ShowMessage(String warning, String Title)
         {
             await new MessageDialog(warning, Title).ShowAsync();
         }
 
-        private async void showMessage(String warning)
+        private async void ShowMessage(String warning)
         {
             await new MessageDialog(warning).ShowAsync();
         }

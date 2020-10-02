@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace KassaSysteemUWP.Classes
 {
-    class Product
+    public class Product
     {
         public string name;
 
@@ -28,9 +28,9 @@ namespace KassaSysteemUWP.Classes
 
     }
 
-    enum ProductType
+    public enum ProductType
     { 
-        Drink,
+        Drinks,
         Main,
         Dessert
     }

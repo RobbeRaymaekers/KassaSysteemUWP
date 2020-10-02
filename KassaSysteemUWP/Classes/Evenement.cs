@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 
 namespace KassaSysteemUWP.Classes
 {
-    class Evenement
+    public class Evenement
     {
 
         // Name of the event
@@ -33,7 +33,7 @@ namespace KassaSysteemUWP.Classes
         public static ObservableCollection<Evenement> EventList = new ObservableCollection<Evenement>();
         public static HashSet<String> EventNameList = new HashSet<string>();
 
-
+        public List<Day> Days { get => days; set => days = value; }
         public int AmntDays { get => _amntDays; set => _amntDays = value; }
         public string Name
         {
@@ -61,7 +61,7 @@ namespace KassaSysteemUWP.Classes
             AmntDays = amntDays;
 
             //create all the days for the event
-            for(int i = 0; i < amntDays; i++)
+            for(int i = 1; i < amntDays+1; i++)
             {
                 days.Add(new Day(this, i));
             }
@@ -72,7 +72,7 @@ namespace KassaSysteemUWP.Classes
 
         }
 
-        public void changeDays(int newAmntDays)
+        public void ChangeDays(int newAmntDays)
         {
             if(newAmntDays == AmntDays) { return; }
             else if (newAmntDays > AmntDays)

@@ -31,6 +31,8 @@
         </ListBox>
         <TextBlock Margin="0,72,42,0" Text="Maak een nieuw evenement aan" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" FontWeight="Bold" FontSize="36" HorizontalAlignment="Right" Width="550" Height="81" VerticalAlignment="Top"/>
         <Button x:Name="addEventBttn" Content="Maak aan" Margin="0,150,42,0" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Top" HorizontalAlignment="Right" Width="544" Click="Button_Click" Height="50"/>
+        <TextBlock Margin="10,0,0,57" Text="Beheer het geselecteerde event" Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" FontWeight="Bold" FontSize="28" HorizontalAlignment="Left" Width="550" Height="81" VerticalAlignment="Bottom"/>
+        <Button x:Name="loadEventBttn" Content="Beheer" Margin="10,0,0,0" Grid.Row="1" Grid.Column="1"  VerticalAlignment="Bottom" Width="544" Click="loadEventBttn_Click" Height="50"/>
 
     </Grid>
 </Page>

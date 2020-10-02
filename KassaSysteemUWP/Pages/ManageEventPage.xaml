@@ -7,6 +7,46 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Default" Visibility="Visible">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300" ></RowDefinition>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="EventNameTextBlock" Margin="0,100,0,0" Text="Kies een Evenement" Grid.Row="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="81" FontWeight="Bold" FontSize="28" HorizontalAlignment="Center" Width="342"/>
+        <ListBox x:Name="DayListBox" Grid.Row="1" Margin="64,0,0,0" HorizontalAlignment="Left" Width="337" Height="546" VerticalAlignment="Top"
+                 ItemsSource="{x:Bind days}" SelectionChanged="DaySelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10">
+                        <TextBlock Text="{Binding DayID}" Margin="10" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+
+        <TextBlock Margin="0,72,42,0" Text="Wijzig en beheer het menu" Grid.Row="0" Grid.Column="1" TextWrapping="Wrap" FontWeight="Bold" FontSize="36" HorizontalAlignment="Right" Width="550" Height="81" VerticalAlignment="Top"/>
+        <Button x:Name="MenuBttn" Content="Ga naar menu" Margin="0,150,42,0" Grid.Row="0" Grid.Column="1"  VerticalAlignment="Top" HorizontalAlignment="Right" Width="544" Click="MenuBttn_Click" Height="50"/>
+
+        <ListBox x:Name="FamilyListBox" Grid.Row="1" Grid.Column="1" Margin="64,0,0,0" HorizontalAlignment="Left" Width="337" Height="546" VerticalAlignment="Top" 
+                   Visibility="Collapsed" ItemsSource="{x:Bind families}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10">
+                        <TextBlock Text="{Binding Name}" Margin="10" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+
+        </ListBox>
+    </Grid>
+
 
 </Page>

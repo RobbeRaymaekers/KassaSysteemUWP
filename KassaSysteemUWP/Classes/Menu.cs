@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KassaSysteemUWP.Classes
 {
-    class Menu
+    public class Menu
     {
 
         private string name;

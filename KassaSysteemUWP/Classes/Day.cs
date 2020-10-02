@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KassaSysteemUWP.Classes
 {
-    class Day
+    public class Day
     {
 
         // Event belonging to this day
@@ -18,7 +18,8 @@ namespace KassaSysteemUWP.Classes
         // all families that visited this day
         private HashSet<Family> families = new HashSet<Family>();
 
-
+        public int DayID { get => dayID; set => dayID = value; }
+        public HashSet<Family> Families { get => families; set => families = value; }
 
         public Day(Evenement ogEvenement, int dayID)
         {

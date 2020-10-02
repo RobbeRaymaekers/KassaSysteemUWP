@@ -1,4 +1,5 @@
 ﻿using KassaSysteemUWP.Pages;
+using KassaSysteemUWP.Classes;
 using System.Collections.ObjectModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -34,6 +35,12 @@ namespace KassaSysteemUWP
         private void eventListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void loadEventBttn_Click(object sender, RoutedEventArgs e)
+        {
+            ManageEventPage.SetEVENT((Evenement)eventListBox.SelectedItem);
+            Frame.Navigate(typeof(ManageEventPage));
         }
     }
 }
